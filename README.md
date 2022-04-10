@@ -8,3 +8,9 @@
 - [tds | How To Build & Deploy a React + Flask App](https://towardsdatascience.com/build-deploy-a-react-flask-app-47a89a5d17d9)
 - [tds | ReactJS + Python Flask on Heroku](https://towardsdatascience.com/reactjs-python-flask-on-heroku-2a308272886a)
 - [blog | How to connect Flask to ReactJs](https://dev.to/nagatodev/how-to-connect-flask-to-reactjs-1k8i)
+- [MongoDB](https://www.mongodb.com/)
+
+### Code
+
+- [w3schools | React Router](https://www.w3schools.com/react/react_router.asp)
+- [medium | Create a stock chart in react js](https://medium.com/how-to-react/create-a-stock-chart-in-react-js-677be5f2f356)
