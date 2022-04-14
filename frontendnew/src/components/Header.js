@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import Button from "./Button";
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 // const onClickDefault = (e) => {
 //   console.log('From Header')
@@ -12,9 +12,27 @@ const Header = ({ title, onAdd, showAddTask }) => {
     return (
         <header className='header'>
             <div className="row">
-                <h1 className='col-8'>{title}</h1>
+                <div className="col-8">
+
+                    <div className="row">
+                        <div className="col-2">
+                            <Link to="/">Stocks</Link>
+                        </div>
+                        <div className="col-2">
+                            <Link to="/app">App</Link>
+                        </div>
+                        <div className="col-2">
+                            <Link to="/about">About</Link>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <h1>{title}</h1>
+                    </div>
+
+                </div>
                 <div className="text-end col-4 align-bottom">
-                    {location.pathname === '/' &&
+                    {location.pathname === '/app' &&
                         <Button color={showAddTask ? 'btn btn-danger' : 'btn btn-dark'}
                                 text={showAddTask ? 'Close' : 'Add Task'}
                                 onClick={onAdd}
