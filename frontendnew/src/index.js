@@ -10,6 +10,7 @@ import App from './App';
 //     <App />
 //   </React.StrictMode>
 // );
+
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import About from "./components/About";
 
