@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-const onClickDefault = (e) => {
-  console.log(e)
-}
+// const onClickDefault = (e) => {
+//   console.log(e)
+// }
 
 const Button = ({color, text, onClick}) => {
     const buttonClasses = [color, 'btn']

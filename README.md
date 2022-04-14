@@ -16,3 +16,4 @@
 - [medium | Create a stock chart in react js](https://medium.com/how-to-react/create-a-stock-chart-in-react-js-677be5f2f356)
 - [bootstrap | Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
 - [react-icons](https://react-icons.github.io/react-icons)
+- [json server](https://www.npmjs.com/package/json-server)

@@ -8,7 +8,7 @@ const Task = ({task_id, task, onDelete, onToggle}) => {
                     <h3>{task.text} </h3>
                     <p>{task.day}</p>
                 </div>
-                <div className="col-2 text-center">
+                <div className="col-2 align-self-center">
                     <FaTimes
                         size={50}
                         style={{color: 'red', cursor: 'pointer'}}

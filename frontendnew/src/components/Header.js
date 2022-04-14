@@ -1,22 +1,28 @@
 import PropTypes from "prop-types"
 import Button from "./Button";
+import {useLocation} from "react-router-dom";
 
-const onClickDefault = (e) => {
-  console.log('From Header')
-}
+// const onClickDefault = (e) => {
+//   console.log('From Header')
+// }
 
-const Header = ({ title, onAdd, showAdd }) => {
+const Header = ({ title, onAdd, showAddTask }) => {
+    const location = useLocation()
 
-  return (
-    <header className='header'>
-        <div className="row">
-            <h1 className='col-8'>{title}</h1>
-            <div className="text-end col-4 align-bottom">
-                <Button color='btn-dark' text='Click Here!' onClick={onClickDefault} />
+    return (
+        <header className='header'>
+            <div className="row">
+                <h1 className='col-8'>{title}</h1>
+                <div className="text-end col-4 align-bottom">
+                    {location.pathname === '/' &&
+                        <Button color={showAddTask ? 'btn btn-danger' : 'btn btn-dark'}
+                                text={showAddTask ? 'Close' : 'Add Task'}
+                                onClick={onAdd}
+                    />}
+                </div>
             </div>
-        </div>
-    </header>
-  )
+        </header>
+      )
 }
 
 Header.defaultProps = {

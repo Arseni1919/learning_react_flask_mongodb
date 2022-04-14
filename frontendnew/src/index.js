@@ -10,7 +10,16 @@ import App from './App';
 //     <App />
 //   </React.StrictMode>
 // );
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import About from "./components/About";
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<App tab="home" />);
+root.render(
+    <Router>
+        <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="about" element={<About />} />
+        </Routes>
+    </Router>
+);
