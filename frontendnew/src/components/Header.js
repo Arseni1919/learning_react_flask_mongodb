@@ -11,7 +11,7 @@ const Header = ({ title, onAdd, showAdd }) => {
     <header className='header'>
         <div className="row">
             <h1 className='col-8'>{title}</h1>
-            <div className="text-end col-4">
+            <div className="text-end col-4 align-bottom">
                 <Button color='btn-dark' text='Click Here!' onClick={onClickDefault} />
             </div>
         </div>

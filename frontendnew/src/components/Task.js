@@ -1,11 +1,22 @@
-import { DiAtom } from "react-icons/di";
+import { FaTimes } from "react-icons/fa";
 
-const Task = ({task_id, task}) => {
+const Task = ({task_id, task, onDelete, onToggle}) => {
     return (
-        <div className='task container rounded-3 border border-4 border-info my-3'>
-            <h3>{task.text}</h3>
-            <p>{task.day}</p>
-            <DiAtom />
+        <div className={`task container rounded-3 border border-4 my-3 ${task.reminder ? "border-warning": 'border-info'}`} onDoubleClick={() => onToggle(task.id)}>
+            <div className="row">
+                <div className="col-10">
+                    <h3>{task.text} </h3>
+                    <p>{task.day}</p>
+                </div>
+                <div className="col-2 text-center">
+                    <FaTimes
+                        size={50}
+                        style={{color: 'red', cursor: 'pointer'}}
+                        onClick={() => onDelete(task.id)}
+                    />
+                </div>
+            </div>
+
 
         </div>
     )

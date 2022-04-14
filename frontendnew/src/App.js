@@ -25,14 +25,33 @@ function App() {
             reminder: false,
         },
     ])
+
+    const deleteTask = (id) => {
+        setTasks(tasks.filter((task) => task.id !== id))
+    }
+    
+    const toggleReminder = (id) => {
+      setTasks(tasks.map((task) => task.id === id ? {
+          ...task, reminder: !task.reminder
+      } : task))
+    }
+
     const classes = ['container', 'rounded-3', 'border border-success', 'mt-3', 'p-5']
-  return (
-    <div className={classes.join(" ")}>
-        <Header title='React + Flask + MongoDB' />
-        <Tasks tasks={tasks}/>
-        {/*<Header />*/}
-    </div>
-  );
+    return (
+        <div className={classes.join(" ")}>
+            <Header title='React + Flask + MongoDB' />
+            {tasks.length > 0 ?
+                <Tasks
+                    tasks={tasks}
+                    onDelete={deleteTask}
+                    onToggle={toggleReminder}
+                />
+                :
+                'No tasks'
+            }
+            {/*<Header />*/}
+        </div>
+    );
 }
 
 export default App;
