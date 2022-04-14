@@ -14,3 +14,5 @@
 
 - [w3schools | React Router](https://www.w3schools.com/react/react_router.asp)
 - [medium | Create a stock chart in react js](https://medium.com/how-to-react/create-a-stock-chart-in-react-js-677be5f2f356)
+- [bootstrap | Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
+- [react-icons](https://react-icons.github.io/react-icons)
