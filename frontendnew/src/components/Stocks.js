@@ -8,7 +8,7 @@ import StocksList from "./StocksList";
 
 
 const Stocks = () => {
-    const containerClasses = ['container', 'rounded-3', 'border border-primary', 'm-3', 'p-3']
+    const containerClasses = ['container', 'rounded-3', 'border border-3 border-primary', 'my-3', 'p-3']
     return (
         <div className='container mt-3 p-5'>
 

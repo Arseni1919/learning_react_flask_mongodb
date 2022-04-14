@@ -17,3 +17,4 @@
 - [bootstrap | Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
 - [react-icons](https://react-icons.github.io/react-icons)
 - [json server](https://www.npmjs.com/package/json-server)
+- [react-plotly Component](https://github.com/plotly/react-plotly.js/blob/master/README.md)
