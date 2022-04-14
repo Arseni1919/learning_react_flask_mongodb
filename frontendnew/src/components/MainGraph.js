@@ -14,7 +14,7 @@ const MainGraph = ({containerClasses}) => {
                   },
                   {type: 'bar', x: [1, 2, 3], y: [2, 5, 3]},
                 ]}
-                layout={ {width: 520, title: 'A Fancy Plot'} }
+                layout={ {width: 720, title: 'A Fancy Plot'} }
               />
         </div>
     )

@@ -19,7 +19,7 @@ const Stocks = () => {
                     <StrategiesList containerClasses={containerClasses} />
                     <SignalsList containerClasses={containerClasses} />
                 </div>
-                <div className="col-6">
+                <div className="col-8">
                     <MainGraph containerClasses={containerClasses} />
                     <SignalsGraphs containerClasses={containerClasses} />
                 </div>
