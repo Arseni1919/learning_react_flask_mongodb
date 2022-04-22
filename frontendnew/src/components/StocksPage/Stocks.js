@@ -1,16 +1,22 @@
-import Header from "./Header";
+import Header from "../Header";
 import {Link} from "react-router-dom";
 import StrategiesList from "./StrategiesList";
 import SignalsList from "./SignalsList";
 import MainGraph from "./MainGraph";
 import SignalsGraphs from "./SignalsGraphs";
 import StocksList from "./StocksList";
-
+import {useRef, useEffect} from "react";
 
 const Stocks = () => {
-    const containerClasses = ['container', 'rounded-3', 'border border-3 border-primary', 'my-3', 'p-3']
+    const containerClasses = ['container', 'rounded-3', 'border border-2 border-primary', 'my-2', 'p-2']
+
+    const ref = useRef(null);
+    useEffect(() => {
+        // console.log("width", ref.current.offsetWidth);
+        }, [ref]);
+
     return (
-        <div className='container mt-3 p-5'>
+        <div className='container mt-2 p-1'>
 
             <Header title={'Stocks Page'} />
 
@@ -19,7 +25,7 @@ const Stocks = () => {
                     <StrategiesList containerClasses={containerClasses} />
                     <SignalsList containerClasses={containerClasses} />
                 </div>
-                <div className="col-8">
+                <div className="col-8" ref={ref}>
                     <MainGraph containerClasses={containerClasses} />
                     <SignalsGraphs containerClasses={containerClasses} />
                 </div>

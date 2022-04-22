@@ -14,6 +14,7 @@
 
 - [w3schools | React Router](https://www.w3schools.com/react/react_router.asp)
 - [medium | Create a stock chart in react js](https://medium.com/how-to-react/create-a-stock-chart-in-react-js-677be5f2f356)
+- [medium | Build a simple react app that display stock chart](https://paolo-delia99.medium.com/using-react-and-plotly-js-to-display-stock-chart-2b9e8bdc71c7)
 - [bootstrap | Borders](https://getbootstrap.com/docs/5.0/utilities/borders/)
 - [react-icons](https://react-icons.github.io/react-icons)
 - [json server](https://www.npmjs.com/package/json-server)
